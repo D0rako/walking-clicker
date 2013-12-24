@@ -1,0 +1,16 @@
+a{
+color: blue;
+text-decoration: underline;
+cursor:pointer;
+}
+em{
+	color:#FF0000;
+	font-style:normal;
+	font-weight:bold;
+}
+.hideAtStart{
+	visibility:hidden;
+}
+.doNotDisplay{
+	display:none;
+}

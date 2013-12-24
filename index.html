@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Dorako's Super Cool Cookie Clicker Clone Mk II</title>
+		<link rel="stylesheet" type="text/css" href="base.css" />
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<noscript>Psst, you have Javascript disabled! This game kinda requires Javascript to run, so you'll probably want to enable it, or get a new browser if yours cannot run Javascript, before playing this.</noscript>
+		<div id="header" class="hideAtStart">
+		</div>
+		<p></p><!--REMOVE ME-->
+		<div id="currentZone">
+			<p id="zoneDescription"></p>
+			<input type="button" id="exploreButton" onclick="Main.explore()" value="Explore!">
+			<input type="button" id="groveButton" class="hideAtStart" onclick="Main.cutWood()" value="Chop wood">
+			<input type="button" id="mineButton" class="hideAtStart" onclick="Main.mine()" value="Mine stone">
+			<input type="button" id="sandButton" class="hideAtStart" onclick="Main.digSand()" value="Dig out sand">
+		</div>
+		<p id="buildList" class="doNotDisplay"></p>
+		<div id="furnaceDisplay" class="doNotDisplay">
+			<span id="cookableItems"></span></br>
+			<span id="furnaceUpgrade"></span>
+		</div>
+		<div id="inventory" class="doNotDisplay">
+		</div>
+		<p></p><!--REMOVE ME-->
+		<div id="stats">
+			<span id="explorePercent"></span></br>
+			<span id="woodOwned" class="hideAtStart"></span></br>
+			<span id="stoneOwned" class="hideAtStart"></span></br>
+			<span id="coalOwned" class="hideAtStart"></span></br>
+			<span id="ironOwned" class="hideAtStart"></span></br>
+			<span id="ironBarOwned" class="hideAtStart"></span></br>
+			<span id="sandOwned" class="hideAtStart"></span></br>
+			<span id="glassOwned" class="hideAtStart"></span></br>
+			<p id="ownedList" class="hideAtStart"></p>
+		</div>
+		<p id="notificationList"></p>
+		<div id="vanityFooter">
+			<span id="version"></span> | <a id="saveButton" onclick="Main.saveGame()">Save</a> | <a id="loadButton" onclick="Main.loadGame()">Load</a> | <a id="wipeButton" onclick="Main.resetGame()">Reset Game</a>
+		</div>
+	</body>
+</html>
